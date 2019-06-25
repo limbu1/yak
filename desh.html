@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> page layout </title>
+	
+<style>
+<style>
+	.head1 {
+		font-size:40px;
+		color:#009900;
+		font-weight:bold;
+	}
+	.head2 {
+		font-size:17px;
+		margin-left:10px;
+		margin-bottom:15px;
+	}
+	body {
+		margin: 0 auto;
+		background-position:center;
+		background-size: contain;
+	}
+
+	.menu {
+		position: sticky;
+		top: 0;
+		background-color: #009900;
+		padding:10px 0px 10px 0px;
+		color:white;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.menu a {
+		float left;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	.menu-log {
+		right: auto;
+		float: right;
+	}
+	footer {
+		width: 100%;
+		bottom: 0px;
+		background-color: #000;
+		color: #fff;
+		position: absolute;
+		padding-top:20px;
+		padding-bottom:50px;
+		text-align:center;
+		font-size:30px;
+		font-weight:bold;
+	}
+	.body_sec {
+		margin-left:20px;
+	}
+	
+
+
+form {
+	border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+img.Yaakma{
+	width: 40%;
+	border-radius: 50%;
+}
+
+.container {
+	padding: 16px;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+	span.psw {
+	display: block;
+	float: none;
+	}
+	.cancelbtn {
+	width: 100%;
+	}
+	
+}
+footer {
+	width: 100%;
+	bottom: 0px;
+	background-color: #000;
+	color: #fff;
+	position: absolute;
+	padding-top:20px;
+	padding-bottom:50px;
+	text-align:center;
+	font-size:30px;
+	font-weight:bold;
+}
+.body_sec {
+	margin-left:20px;
+}
+</head>
+</style>
+<body>
+<h1> Yaakma Inc. </h1>
+<!-- Menu Navigation Bar -->
+<div class="menu">
+	<a href="#home">Home</a>
+	<a href="#news">About Yaakma</a>
+	<a href="#notification">Yaakma Career</a>
+</div>
+
+<form action="/action_page.php">
+<div class="imgcontainer">
+	<img src="img_avatar2.png" alt="Yaakma" class="Yaakma">
+</div>
+<h2> Sign In</h2>
+
+<div class="container">
+	<label><b>Username</b></label>
+	<input type="text" placeholder="Enter Username" name="uname" required>
+
+	<label><b>Password</b></label>
+	<input type="password" placeholder="Enter Password" name="psw" required>
+
+	<button type="submit">Login</button>
+	<input type="checkbox" checked="checked"> Remember me
+</div>
+
+<div class="container" style="background-color:#f1f1f1">
+	<button type="button" class="cancelbtn">Sign up</button>
+	<span class="psw">Forgot <a href="#">password?</a></span>
+</div>
+
+<!-- Footer Section -->
+<footer>Contact Us</footer>
+</form>
+
+</body>
+</html>
